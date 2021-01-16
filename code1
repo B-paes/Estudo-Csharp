@@ -1,0 +1,34 @@
+/*
+ * Criado por: Bruno Paes
+ *
+ * Exercicio csharp 1
+ *
+ * Fazer um programa para ler os dados de duas pessoas, depois
+ * mostrar o nome da pessoa mais velha.
+ */
+ 
+using System;
+
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Dados da primeira pessoa:");
+		Console.Write("Nome: ");
+		var nome1 = Console.ReadLine();
+		Console.Write("Idade: ");
+		int idade1 = int.Parse(Console.ReadLine());
+		
+		Console.WriteLine("Dados da segunda pessoa:");
+		Console.Write("Nome: ");
+		var nome2 = Console.ReadLine();
+		Console.Write("Idade: ");
+		int idade2 = int.Parse(Console.ReadLine());
+		
+
+		if (idade1 > idade2){
+			Console.WriteLine("Pessoas mais velha {0}", nome1);}
+		else{
+			Console.WriteLine("Pessoas mais velha {0}", nome2);}
+	}
+}
